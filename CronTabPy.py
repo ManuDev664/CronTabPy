@@ -4,7 +4,7 @@ from crontab import CronTab
 cron = CronTab(user=True)
 
 # Crear una nueva tarea
-job = cron.new(command='python3 /home/dam50/miscript.py')
+job = cron.new(command='mkdir $HOME/microntab')
 
 # Configurar para que se ejecute cada minuto
 job.minute.every(1)
